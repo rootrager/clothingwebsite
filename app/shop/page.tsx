@@ -39,7 +39,11 @@ export default async function ShopPage() {
                     ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                             {products.map((product) => (
-                                <div key={product.id} className="group cursor-pointer border-r border-b border-black p-6 flex flex-col hover:bg-white transition-colors duration-300 relative min-h-[400px]">
+                                <Link
+                                    key={product.id}
+                                    href={`/shop/${product.category}/${product.id}`}
+                                    className="group cursor-pointer border-r border-b border-black p-6 flex flex-col hover:bg-white transition-colors duration-300 relative min-h-[400px]"
+                                >
 
                                     {/* "NEW" Badge */}
                                     {product.is_new && (
@@ -57,6 +61,11 @@ export default async function ShopPage() {
                                             className="object-contain transition-transform duration-500 group-hover:scale-110"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         />
+
+                                        {/* View Indicator (Visual Only) */}
+                                        <div className="absolute bottom-4 right-4 bg-white text-black px-4 py-2 font-heading font-bold text-xs uppercase tracking-wider border border-black shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            View
+                                        </div>
                                     </div>
 
                                     {/* Info Area */}
@@ -73,7 +82,7 @@ export default async function ShopPage() {
                                             </span>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     )}

@@ -52,7 +52,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                     ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                             {products.map((product) => (
-                                <div key={product.id} className={`group cursor-pointer border-r border-b ${theme.border} p-6 flex flex-col hover:opacity-80 transition-opacity duration-300 relative min-h-[400px]`}>
+                                <Link
+                                    key={product.id}
+                                    href={`/shop/${category}/${product.id}`}
+                                    className={`group cursor-pointer border-r border-b ${theme.border} p-6 flex flex-col hover:opacity-80 transition-opacity duration-300 relative min-h-[400px]`}
+                                >
 
                                     {/* "NEW" Badge */}
                                     {product.is_new && (
@@ -70,6 +74,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                                             className="object-contain transition-transform duration-500 group-hover:scale-110"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         />
+
+                                        {/* View Indicator (Visual Only) */}
+                                        <div className={`absolute bottom-4 right-4 ${theme.bg} ${theme.text} px-4 py-2 font-heading font-bold text-xs uppercase tracking-wider border ${theme.border} shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                                            View
+                                        </div>
                                     </div>
 
                                     {/* Info Area */}
@@ -86,7 +95,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                                             </span>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     )}
