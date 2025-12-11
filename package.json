@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@fontsource/bbh-sans-bartle": "^5.2.1",
     "@gsap/react": "^2.1.2",
     "@supabase/supabase-js": "^2.87.1",
     "gsap": "^3.14.1",

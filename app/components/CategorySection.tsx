@@ -56,7 +56,7 @@ const CategorySection = () => {
 
                 {/* Header */}
                 <h2 className="text-center font-heading text-sm font-bold uppercase tracking-widest mb-12 text-almost-black">
-                    Curated Collections
+                    UNISEX COLLECTIONS & DIGITAL DROPS
                 </h2>
 
                 {/* Grid */}

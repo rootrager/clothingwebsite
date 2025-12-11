@@ -21,6 +21,7 @@ const config: Config = {
                 serif: ["Playfair Display", "serif"],
                 gravitas: ["var(--font-gravitas)", "serif"],
                 body: ["Geist Mono", "monospace"], // Using existing Geist Mono or fallback
+                bbh: ["BBH Sans Bartle", "sans-serif"],
             },
         },
     },

@@ -56,14 +56,14 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="relative w-full min-h-screen bg-vintage-cream text-almost-black overflow-hidden flex flex-col pt-32 lg:pt-0">
+        <section ref={sectionRef} className="relative w-full min-h-screen bg-vintage-cream text-almost-black overflow-hidden flex flex-col">
 
             {/* Fixed Navbar - Layout Fix: using justify-between for proper spacing */}
             <nav ref={navRef} className="fixed top-0 left-0 w-full px-6 md:px-12 py-6 flex justify-between items-center z-50 bg-vintage-cream/80 backdrop-blur-md border-b border-black/5">
 
                 {/* 1. Logo (Left) */}
-                <div className="font-heading text-2xl font-bold tracking-tighter uppercase cursor-pointer">
-                    <Link href="/">Antigravity</Link>
+                <div className="font-gravitas text-2xl font-bold tracking-tighter uppercase cursor-pointer">
+                    <Link href="/">I'M NOT HUMAN</Link>
                 </div>
 
                 {/* 2. Links (Center) */}
@@ -84,34 +84,28 @@ const HeroSection = () => {
             </nav>
 
             {/* Main Content Grid */}
-            <main className="flex-1 grid grid-cols-1 md:grid-cols-2 relative h-full">
+            <main className="flex-1 grid grid-cols-1 md:grid-cols-2 relative h-full pt-32 md:pt-40">
 
                 {/* Left Column: Stacked Design */}
                 <div className="relative p-8 md:p-12 lg:pl-20 flex flex-col justify-center items-center text-center md:items-start md:text-left order-2 md:order-1 h-full hero-content z-10">
 
                     {/* TOP: Headline */}
                     <div className="w-full mt-8 md:mt-0 mb-8 md:mb-12">
-                        <h1 className="hero-text-element font-gravitas text-6xl md:text-7xl lg:text-9xl uppercase leading-[0.85] text-almost-black md:-ml-1 tracking-tighter">
-                            Street <br />
-                            <span className="font-serif italic font-normal text-5xl md:text-7xl lg:text-8xl lowercase tracking-normal block transform translate-y-[-10px]">Culture</span>
-                            Revived
+                        <h1 className="hero-text-element font-bbh text-7xl md:text-8xl lg:text-[10rem] uppercase leading-none text-almost-black md:-ml-1 tracking-tighter">
+                            <span className="block md:inline">I'M NOT </span>
+                            <span className="font-serif italic font-bold text-6xl md:text-7xl lg:text-[9rem] lowercase tracking-normal md:inline-block transform md:translate-y-[-5px]">HUMAN.</span>
                         </h1>
+                        <p className="hero-text-element font-body text-base md:text-lg text-gray-700 mt-6 max-w-lg">
+                            Where your personal style is created. Discover the newest unisex collections, rare items, and digital artistry.
+                        </p>
                     </div>
 
                     {/* MIDDLE: Social Proof & CTA */}
                     <div className="hero-text-element w-full flex flex-col items-center md:items-start gap-8">
 
                         <div className="flex items-center gap-4">
-                            <div className="flex -space-x-3">
-                                {[1, 2, 3].map((i) => (
-                                    <div key={i} className="w-10 h-10 rounded-full border-2 border-ivory bg-gray-300 relative overflow-hidden">
-                                        <div className={`w-full h-full bg-gray-${i * 100 + 300}`}></div>
-                                    </div>
-                                ))}
-                            </div>
                             <div className="flex flex-col text-left">
-                                <span className="font-bold font-heading text-sm uppercase tracking-wider">Join 150k+</span>
-                                <span className="text-xs text-gray-600 font-medium">Streetwear Enthusiasts</span>
+                                <span className="font-bold font-heading text-sm uppercase tracking-wider">Curated by Rootrager & Melika</span>
                             </div>
                         </div>
 
@@ -121,7 +115,7 @@ const HeroSection = () => {
                     </div>
 
                     {/* BOTTOM: Feature Card */}
-                    <div className="hero-text-element w-full bg-[#EAE8DC] rounded-xl p-6 border border-black/5 flex items-center text-left gap-6 max-w-md shadow-sm mt-12 md:mt-auto">
+                    <Link href="/shop/tops/2" className="hero-text-element w-full bg-[#EAE8DC] rounded-xl p-6 border border-black/5 flex items-center text-left gap-6 max-w-md shadow-sm mt-12 md:mt-auto hover:scale-105 transition-transform duration-300 cursor-pointer">
                         <div className="w-16 h-16 bg-black rounded-lg shrink-0 overflow-hidden relative">
                             <div className="absolute inset-0 bg-gradient-to-tr from-vintage-red to-black opacity-80"></div>
                         </div>
@@ -129,10 +123,10 @@ const HeroSection = () => {
                             <p className="font-body text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Featured Drop</p>
                             <h3 className="font-heading font-bold text-lg leading-tight uppercase">Urban Utility Jacket V2</h3>
                             <div className="flex gap-4 mt-2 text-xs font-bold uppercase">
-                                <span className="underline decoration-1 underline-offset-2 cursor-pointer">View Details</span>
+                                <span className="underline decoration-1 underline-offset-2">View Details</span>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
                 </div>
 

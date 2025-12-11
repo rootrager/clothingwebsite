@@ -38,7 +38,7 @@ const AboutContactSection = () => {
             <div className="bg-vintage-cream text-black py-4 border-y-2 border-black">
                 <Marquee gradient={false} speed={50} className="overflow-hidden">
                     <span className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-widest px-4">
-                        ESTABLISHED 2025 • TEHRAN • TOKYO • NEW YORK • STREET CULTURE • ESTABLISHED 2025 • TEHRAN • TOKYO • NEW YORK • STREET CULTURE •
+                        LIVE FAST DIE YOUNG • EST. 2025 • ZARA • BOOHOOMAN • PHYSICAL & DIGITAL • I'M NOT HUMAN • BERESHKA • NIKE • RICK OWENS • COLLUSION •
                     </span>
                 </Marquee>
             </div>
@@ -50,10 +50,10 @@ const AboutContactSection = () => {
                 <div className="max-w-4xl mb-20 w-full">
                     {/* Mobile: text-4xl, Desktop: text-7xl/8xl. Break-words to prevent overflow. */}
                     <h2 className="font-gravitas text-4xl md:text-7xl lg:text-8xl uppercase leading-[0.9] mb-8 break-words">
-                        We Don't Follow <br /> Cannot Be Tamed <br /> Trends.
+                        CREATE YOUR REALITY.
                     </h2>
                     <p className="font-body text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                        We create pieces that tell a story. From the streets of Tehran to the neon lights of Tokyo and the concrete styling of New York. Join the movement of authentic expression.
+                        We are the glitch in the system. Born in the streets of Karaj and raised on the digital frontier. 'I'M NOT HUMAN' is not just a brand; it's a statement of identity. Curated by Rootrager & Melika, we merge physical streetwear with digital artistry to create items that defy categorization. Here, your personal style is created, not dictated.
                     </p>
                 </div>
 
@@ -73,20 +73,25 @@ const AboutContactSection = () => {
 
                 {/* Social Icons (Lucide) */}
                 <div className="flex gap-8 md:gap-16 items-center justify-center">
-                    <a href="#" className="group">
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="group">
                         <Instagram className="w-8 h-8 md:w-10 md:h-10 text-ivory group-hover:text-vintage-red group-hover:scale-110 transition-all duration-300" />
                     </a>
-                    <a href="#" className="group">
+                    <a href="https://t.me/studio24club" target="_blank" rel="noopener noreferrer" className="group">
                         <Send className="w-8 h-8 md:w-10 md:h-10 text-ivory group-hover:text-vintage-red group-hover:scale-110 transition-all duration-300" />
                     </a>
-                    <a href="#" className="group">
+                    <a href="https://x.com/rootrager" target="_blank" rel="noopener noreferrer" className="group">
                         <Twitter className="w-8 h-8 md:w-10 md:h-10 text-ivory group-hover:text-vintage-red group-hover:scale-110 transition-all duration-300" />
                     </a>
                 </div>
 
+                {/* Address Block */}
+                <div className="mt-12 text-gray-400 font-body text-sm">
+                    HQ: Daneshkade St, Next to Sazman Ab, Karaj Square.
+                </div>
+
                 {/* Copyright/Footer Note */}
                 <div className="mt-24 text-gray-600 font-body text-xs uppercase tracking-widest">
-                    © 2025 RooTrageR Brand. All Rights Reserved.
+                    © 2025 I'M NOT HUMAN. Designed by Rootrager & Melika.
                 </div>
 
             </div>
